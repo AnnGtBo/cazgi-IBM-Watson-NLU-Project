@@ -43,7 +43,7 @@ app.get("/url/emotion", (req,res) => {
     let urlToAnalyze = req.query.url
     const analyzeParams = 
         {
-            "text": urlToAnalyze,
+            "url": urlToAnalyze,
             "features": {
                 "keywords": {
                                 "emotion": true,
@@ -69,7 +69,7 @@ app.get("/url/sentiment", (req,res) => {
     let urlToAnalyze = req.query.url
     const analyzeParams = 
     {
-        "text": urlToAnalyze,
+        "url": urlToAnalyze,
         "features": {
             "keywords": {
                 "sentiment": true,
